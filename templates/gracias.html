@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block main %}
+{% include 'nav-fixed.html' %}
+  <div class="rapel4 wf-section">
+    <div class="activity-flex">
+      <div class="reservas-banner">
+        <h1 class="gracias-heading">GRACIAS</h1>
+        <div class="gracias-text">Gracias por registrarse.</div>
+          <div class="div-block-2">
+          <a href="{{ url_for('contacto') }}" class="button w-button">REGISTRAR OTRA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="{{ url_for('static',filename='/js/functions.js') }}" type="text/javascript"></script>
+{% endblock main %}

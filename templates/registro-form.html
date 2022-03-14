@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block main %}
+    {% include 'nav-fixed.html' %}
+  <div class="registro-section wf-section">
+    <h1 class="heading-3">Formulario de Registro</h1>
+    <div>La entrada al parque tiene un costo de 10.000 COP por persona. Este dinero tiene como fin el desarollo de mas vías en el parque.</div>
+    <div class="w-form">
+      <form action="{{ url_for('registro') }}" method="post">
+          {{ form.csrf_token }}
+        <h3 class="heading-5">Información básica</h3>
+          <label for="first_name" class="form-label">Nombre</label>
+            {{ form.first_name(class="select-field w-select") }}
+          <label for="last_name" class="form-label">Apellidos</label>
+          {{ form.last_name(class="select-field w-select") }}
+          <label for="id_type" class="form-label">Tipo de identificación</label>
+          {{ form.id_type(class="select-field w-select") }}
+          <label for="id_number" class="form-label">Número de identificación</label>
+          {{ form.id_number(class="select-field w-select") }}
+          <label for="email" class="form-label">Correo electrónico</label>
+          {{ form.email(class="select-field w-select") }}
+          <label for="phone" class="form-label">Teléfono</label>
+          {{ form.phone(class="select-field w-select") }}
+          <label for="e_phone" class="form-label">Teléfono de contacto de emergencia</label>
+          {{ form.e_phone(class="select-field w-select") }}
+
+        <h3 class="heading-5">Para su visita</h3>
+          <label for="date_activity" class="form-label">Fecha de su visita</label>
+          {{ form.date_activity(class="select-field w-select") }}
+          <label for="activity" class="form-label">Actividad que quiere hacer</label>
+          {{ form.activity(class="select-field w-select") }}
+
+          <input type="submit" value="Enviar" data-wait="Please wait..." class="submit-button w-button">
+      </form>
+    </div>
+  </div>
+
+
+
+    <script src="{{ url_for('static',filename='/js/functions.js') }}" type="text/javascript"></script>
+{% endblock main %}

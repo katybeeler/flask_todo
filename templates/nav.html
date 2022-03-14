@@ -1,0 +1,24 @@
+  <div id="header" data-animation="default" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="container-2 w-container">
+      <a href="{{ url_for('index') }}" class="brand w-nav-brand"><img src="{{ url_for('static',filename='images/mountain_rapel.png')}}" loading="lazy" width="70" alt=""></a>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <div data-hover="false" data-delay="0" class="nav-link w-dropdown">
+          <div class="w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div>ACTIVIDADES</div>
+          </div>
+          <nav class="w-dropdown-list">
+            <a href="{{ url_for('rapel') }}" class="nav-link w-dropdown-link">RAPEL</a>
+            <a href="{{ url_for('via') }}" class="nav-link w-dropdown-link">VÍA FERRATA</a>
+            <a href="{{ url_for('escalar') }}" class="nav-link w-dropdown-link">ESCALAR</a>
+            <a href="{{ url_for('camp') }}" class="nav-link w-dropdown-link">CAMP</a>
+          </nav>
+        </div>
+        <a href="{{ url_for('contacto') }}" class="nav-link w-nav-link">CONTACTO</a>
+        <a href="{{ url_for('registro') }}" class="nav-link w-nav-link">REGISTRO</a>
+      </nav>
+      <div class="w-nav-button">
+        <div class="icon w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>

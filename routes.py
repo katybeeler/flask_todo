@@ -8,49 +8,36 @@ import forms
 
 @app.route('/')
 def index():
-    tasks = Task.query.all()
-    return render_template('index.html', tasks=tasks)
+    return render_template('index.html')
 
-@app.route('/add', methods=['GET','POST'])
-def add():
-    form = forms.AddTaskForm()
+@app.route('/rapel')
+def rapel():
+    return render_template('rapel.html')
+
+@app.route('/via-ferrata')
+def via():
+    return render_template('via_ferrata.html')
+
+@app.route('/escalar')
+def escalar():
+    return render_template('escalar.html')
+
+@app.route('/camp')
+def camp():
+    return render_template('camp.html')
+
+@app.route('/registro', methods=['GET','POST'])
+def registro():
+    form = forms.registration()
     if form.validate_on_submit():
-        t = Task(title=form.title.data, date=datetime.utcnow())
-        db.session.add(t)
-        db.session.commit()
-        flash('Task added to datebase')
-        print('Submitted title', form.title.data)
-        return redirect(url_for('index'))
-    return render_template('add.html',form=form)
+        print('registration complete')
+        return redirect(url_for('gracias'))
+    return render_template('registro-form.html',form=form)
 
-@app.route('/edit/<int:task_id>',methods=['GET', 'POST'])
-def edit(task_id):
-    task=Task.query.get(task_id)
-    form = forms.AddTaskForm()
-    if task:
-        if form.validate_on_submit():
-            task.title = form.title.data
-            task.date = datetime.utcnow()
-            db.session.commit()
-            flash('Task has been updated ')
-            return redirect(url_for('index'))
+@app.route('/contacto')
+def contacto():
+    return render_template('contacto.html')
 
-        form.title.data = task.title
-        return render_template('edit.html',form=form, task_id=task_id )
-    return redirect(url_for('index'))
-
-@app.route('/delete/<int:task_id>',methods=['GET', 'POST'])
-def delete(task_id):
-    task=Task.query.get(task_id)
-    form = forms.DeleteTaskForm()
-    if task:
-        if form.validate_on_submit():
-            db.session.delete(task)
-            db.session.commit()
-            flash('Task has been deleted ')
-            return redirect(url_for('index'))
-
-        return render_template('delete.html',form=form, task_id=task_id,title=task.title)
-    else:
-        flash('Task not found')
-    return redirect(url_for('index'))
+@app.route('/gracias')
+def gracias():
+    return render_template('gracias.html')

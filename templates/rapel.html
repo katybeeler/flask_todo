@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block main %}
+{% include 'nav.html' %}
+  <div class="rapel-main wf-section">
+    <div class="activity-flex">
+      <div class="activity-banner">
+        <h1 class="activity-header">RAPEL</h1>
+      </div>
+      <a href="{{ url_for('contacto') }}" class="button w-button">RESERVA AHORA</a>
+    </div>
+  </div>
+  <div class="rapel1 wf-section">
+    <div class="dark-bg">
+      <div class="text">
+        <h2 class="heading-2">Programa desciende el Chicamocha</h2>
+        <div class="activity-text">Durante esta actividad comenzaremos en la parte más alta del cañón del Chicamocha y descenderemos asistidos por cuerdas y sistemas de descenso 250 mts hasta llegar al piso. Durante el recorrido realizaremos una travesía por una repisas natural de aproximadamente 350 mts y concluimos con una caminata ecológica por un bosque seco donde se podrá realizar avistamiento de aves endémicas del Chicamocha y un camino real con vistas exclusivas. <br><br>Al concluir con la caminata llegaremos de nuevo al punto de partida que está en la estación del teleférico de Panachi en la mesa de los Santos.</div>
+      </div>
+    </div>
+  </div>
+  <div class="rapel2 wf-section">
+    <div class="dark-bg">
+      <div class="text">
+        <h2 class="heading-2">Nuestra ubicación</h2>
+        <div class="activity-text">Nuestra ubicación es estratégica al estar ubicados a 1 km de la estación del teleférico de Panachi en la Mesa de los Santos. Esto hace posible combinar la atracción de teleférico y el parque Nacional del Chicamocha con nuestro plan de rapel y vía ferrata en el mismo día.</div>
+        <h2 class="heading-2">Duración del recorrido</h2>
+        <div class="activity-text">El recorrido tiene una duración de aproximadamente 3 Hrs. Dependiendo del tamaño del grupo</div>
+        <h2 class="heading-2">Horarios</h2>
+        <div class="activity-text">Tenemos salidas todos los días a las 9 am y a las 2pm de la tarde.</div>
+      </div>
+    </div>
+  </div>
+  <div class="rapel3 wf-section">
+    <div class="dark-bg">
+      <div class="text">
+        <h2 class="heading-2">Tarifas</h2>
+        <ul role="list">
+          <li class="activity-list">1 Persona: $187,000 <br></li>
+          <li class="activity-list">2 Personas: $135,000 c/u</li>
+          <li class="activity-text">3+ Personas: $118,000 c/u</li>
+        </ul>
+        <h2 class="heading-2">El plan desciende el Chicamocha incluye:</h2>
+        <ul role="list">
+          <li class="activity-list">Entrada al Parque Macaguato<br></li>
+          <li class="activity-list">Guia Calificado</li>
+          <li class="activity-list">Todos los equipos para la actividad son certificados por la UIAA</li>
+          <li class="activity-list">Seguro por el dia de la actividad</li>
+          <li class="activity-text">Hidratación</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="rapel4 wf-section"></div>
+
+    <script src="{{ url_for('static',filename='/js/functions.js') }}" type="text/javascript"></script>
+{% endblock main %}

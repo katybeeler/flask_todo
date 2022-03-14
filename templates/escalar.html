@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+    {% include 'nav.html' %}
+  <div class="climb-main wf-section">
+    <div class="activity-flex">
+      <div class="activity-banner">
+        <h1 class="activity-header">ESCALAR</h1>
+      </div>
+    </div>
+  </div>
+  <div class="climb1 wf-section">
+    <div class="dark-bg">
+      <div class="text">
+        <h2 class="heading-2">Equipo Necesario</h2>
+        <ul role="list">
+          <li class="activity-list">Casco<br></li>
+          <li class="activity-list">Frontal<br></li>
+          <li class="activity-list">Prusik<br></li>
+          <li class="activity-list">Harness<br></li>
+          <li class="activity-list">2 potencias<br></li>
+        </ul>
+          <br>
+        <h2 class="heading-2">Topo</h2>
+        <div class="activity-text">El topo se encuentra <a href="#" class="link-orange"> aqui </a>.</div>
+      </div>
+    </div>
+  </div>
+
+    <script src="{{ url_for('static',filename='/js/functions.js') }}" type="text/javascript"></script>
+{% endblock main %}

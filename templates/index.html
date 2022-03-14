@@ -1,14 +1,18 @@
 {% extends "base.html" %}
-
 {% block main %}
-  {% for task in tasks %}
-    <div class="card">
-      <div class="card-body">
-        <h3>{{ task.title }}</h3>
-        <p>Added on {{ task.date }}</p>
-        <a href="{{ url_for('edit', task_id=task.id) }}" class="btn btn-primary">Edit</a>
-        <a href="{{ url_for('delete', task_id=task.id) }}" class="btn btn-danger">Delete</a>
+  <div class="hero wf-section">
+    <a href="{{ url_for('registro') }}" class="button round w-button">REGISTRO</a>
+    <div class="container w-container">
+      <div class="hero-heading"><img src="{{ url_for('static',filename="images/macaguato_word_logo.png") }}" loading="lazy" sizes="(max-width: 479px) 95vw, (max-width: 991px) 90vw, 80vw" class="image-2">
+        <div class="subtitle-text">SENDEROS VERTICALES</div>
+      </div>
+      <a href="{{ url_for('contacto') }}" class="button w-button">RESERVA AHORA</a>
+      <div class="activities-flex">
+        <a href="{{ url_for('rapel') }}" class="w-inline-block"><img src="{{ url_for('static',filename="images/logo_rapel.png")}}" loading="lazy" sizes="(max-width: 479px) 50vw, (max-width: 767px) 28vw, 20vw" class="activity-button"></a>
+        <a href="{{ url_for('via') }}" class="w-inline-block"><img src="{{ url_for('static',filename="images/logo_via.png")}}" loading="lazy" sizes="(max-width: 479px) 50vw, (max-width: 767px) 28vw, 20vw" alt="" class="activity-button"></a>
+        <a href="{{ url_for('camp') }}" class="w-inline-block"><img src="{{ url_for('static',filename="images/logo_camp.png")}}" loading="lazy" sizes="(max-width: 479px) 50vw, (max-width: 767px) 28vw, 20vw"  alt="" class="activity-button"></a>
+        <a href="{{ url_for('escalar') }}" class="w-inline-block"><img src="{{ url_for('static',filename="images/logo_climb.png")}}" loading="lazy" sizes="(max-width: 479px) 50vw, (max-width: 767px) 28vw, 20vw" alt="" class="activity-button"></a>
       </div>
     </div>
-  {% endfor %}
-{% endblock %}
+  </div>
+{% endblock main %}
