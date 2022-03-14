@@ -1,0 +1,1083 @@
+.hero {
+  position: relative;
+  height: 180vh;
+  background-image: url('../images/main_macaguato_v.jpg');
+  background-position: 50% 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.activities-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 140px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "Area Area-2";
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.container {
+  position: relative;
+  left: 0%;
+  top: 340px;
+  right: 0%;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hero-heading {
+  width: 100vw;
+  margin-bottom: 40px;
+  padding: 15px 10px;
+  background-color: hsla(0, 0%, 80.4%, 0.6);
+}
+
+.button {
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #543a68;
+  border-radius: 20px;
+  background-color: rgba(204, 198, 204, 0.8);
+  font-family: Montserrat, sans-serif;
+  color: #543a68;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.button.round {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 22px;
+}
+
+.footer {
+  padding: 60px 10px 40px;
+  background-color: #ccc6cc;
+  background-image: url('../images/bg_footer.svg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.footer-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-header {
+  margin-bottom: 30px;
+  font-family: Montserrat, sans-serif;
+  color: #543a68;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-family: Montserrat, sans-serif;
+  color: #543a68;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-text.plain {
+  margin-bottom: 20px;
+}
+
+.flex-hor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.image {
+  margin-right: 10px;
+}
+
+.activity-button {
+  width: 20vw;
+  max-width: 200px;
+  margin: 30px 20px;
+  padding: 10px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  background-color: #ccc6cc;
+  -webkit-transition: background-color 1000ms ease, -webkit-transform 600ms ease;
+  transition: background-color 1000ms ease, -webkit-transform 600ms ease;
+  transition: background-color 1000ms ease, transform 600ms ease;
+  transition: background-color 1000ms ease, transform 600ms ease, -webkit-transform 600ms ease;
+}
+
+.activity-button:hover {
+  background-color: #fff;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.div-block {
+  margin-right: 220px;
+}
+
+.rapel-main {
+  position: relative;
+  height: 100vh;
+  margin-top: -20px;
+  background-image: url('../images/main_rappel.jpg');
+  background-position: 34% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.activity-banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: hsla(0, 0%, 80.4%, 0.6);
+}
+
+.activity-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  color: #543a68;
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.rapel1 {
+  position: relative;
+  height: 100%;
+  background-image: url('../images/rapel2.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.body {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #000000;
+}
+
+.rapel2 {
+  position: relative;
+  height: 100%;
+  background-image: url('../images/rapel4.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.rapel3 {
+  height: 100%;
+  background-image: url('../images/rapel1.jpg');
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 4vw;
+  line-height: 5vw;
+}
+
+.rapel4 {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/rapel3.jpg');
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+.via-main {
+  height: 100vh;
+  margin-top: -20px;
+  background-image: url('../images/main_via.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.via1 {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/via1.jpg');
+  background-position: 60% 50%;
+  background-size: cover;
+}
+
+.via2 {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/via2.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.via3 {
+  height: 100vh;
+  background-image: url('../images/via3.jpg');
+  background-position: 35% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 4vw;
+  line-height: 5vw;
+}
+
+.via4 {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/via4.jpg');
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+.camp-main {
+  height: 100vh;
+  margin-top: -20px;
+  background-image: url('../images/main_camp.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.camp1 {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  padding-bottom:100px;
+  background-image: url('../images/camp1.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.reservas {
+  height: 100vh;
+  margin-top: -20px;
+  background-image: url('../images/reservas.jpg');
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.climb1 {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  height: 100%;
+  background-image: url('../images/climb1.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.activity-flex {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.reserves-text {
+  margin-right: 60px;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  color: #543a68;
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+.gracias-text {
+  margin-right: 60px;
+  font-family: Tahoma, sans-serif;
+  color: #543a66;
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+.reserves-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  color: #543a66;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.gracias-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  color: #543a66;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.reservas-banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: hsla(0, 0%, 80.4%, 0.6);
+}
+
+.number-text {
+  margin-right: 60px;
+  font-family: Montserrat, sans-serif;
+  color: #543a68;
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+.image-2 {
+  display: block;
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subtitle-text {
+  margin-top: 10px;
+  color: #543a68;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.dark-bg {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.text {
+  width: 70vw;
+  height:100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.heading-2 {
+  margin: 0px auto 30px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.activity-text {
+  margin-bottom: 40px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  text-align: justify;
+}
+
+.activity-list {
+  margin-bottom: 0px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  text-align: justify;
+}
+
+.navbar {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: none;
+  background-color: #ccc6cc;
+}
+
+.navbar-fixed {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: block;
+  background-color: #ccc6cc;
+}
+
+.nav-link {
+  font-family: Montserrat, sans-serif;
+  color: #543a68;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.link-orange {
+  color: #F8AC48;
+}
+
+.link-orange:hover {
+  color: #543a68;
+}
+
+.link-purple {
+  color: #543a68;
+}
+
+.link-plain {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.brand {
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.climb-main {
+  height: 100vh;
+  background-image: url('../images/main_climb.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.registro-section {
+  display: block;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 60px 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.heading-3 {
+  display: block;
+  margin: 40px auto;
+  color: #543a66;
+  text-align: center;
+}
+
+.div-block-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 60px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.heading-4 {
+  margin-right: auto;
+  margin-left: auto;
+  color: #543a66;
+}
+
+.div-block-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #ccc6cc;
+  -webkit-transition: -webkit-transform 600ms ease;
+  transition: -webkit-transform 600ms ease;
+  transition: transform 600ms ease;
+  transition: transform 600ms ease, -webkit-transform 600ms ease;
+}
+
+.div-block-4:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.submit-button {
+  margin-top: 40px;
+  background-color: #543a66;
+}
+
+.form-label {
+  padding-top:10px;
+  color: #543a66;
+}
+
+.heading-5 {
+  margin-top: 40px;
+  color: #543a66;
+}
+
+.container-2 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-menu {
+  left: auto;
+  right: 0px;
+}
+
+.left-push {
+  margin-left: 33vw;
+}
+
+
+@media screen and (max-width: 991px) {
+  .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100vw;
+    padding-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .hero-heading {
+    padding: 10px;
+    background-color: rgba(204, 198, 204, 0.6);
+  }
+
+  .button {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    background-color: rgba(204, 198, 204, 0.75);
+    font-family: Montserrat, sans-serif;
+    color: #543a68;
+    font-weight: 600;
+  }
+
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .button.round {
+    position: absolute;
+    left: auto;
+    top: 10px;
+    right: 10px;
+    bottom: auto;
+    margin-top: 0px;
+    border-radius: 20px;
+    background-color: rgba(204, 198, 204, 0.6);
+  }
+
+  .button.round:hover {
+    background-color: rgba(204, 198, 204, 0.9);
+  }
+
+  .footer {
+    padding: 40px 10px;
+  }
+
+  .footer-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .footer-header {
+    padding-bottom: 30px;
+    font-family: Montserrat, sans-serif;
+    color: #543a68;
+    font-size: 23px;
+  }
+
+  .footer-text {
+    font-family: Montserrat, sans-serif;
+    color: #543a68;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .footer-text.plain {
+    margin-bottom: 20px;
+  }
+
+  .flex-hor {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .image {
+    margin-right: 10px;
+  }
+
+  .activity-button {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .activity-button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .div-block {
+    margin-right: 220px;
+  }
+
+  .rapel3 {
+    background-position: 60% 100%;
+  }
+
+  .rapel4 {
+    background-position: 50% 0%;
+  }
+
+  .via3 {
+    background-position: 60% 100%;
+  }
+
+  .via4 {
+    background-position: 50% 0%;
+  }
+
+  .reservas {
+    background-position: 0% 50%;
+  }
+
+  .reserves-text {
+    font-family: Montserrat, sans-serif;
+    color: #543a68;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .number-text {
+    font-family: Montserrat, sans-serif;
+    color: #543a68;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .image-2 {
+    width: 90vw;
+  }
+
+  .heading-4 {
+    font-size: 29px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .icon {
+    color: #543a68;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-position: 30% 0%;
+  }
+
+  .activities-flex {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    padding-left: 20px;
+  }
+
+  .footer-header {
+    font-size: 20px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+
+  .activity-button {
+    width: 28vw;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .div-block {
+    margin-right: 100px;
+  }
+
+  .rapel4 {
+    background-position: 50% 0%;
+  }
+
+  .via4 {
+    background-position: 50% 0%;
+  }
+
+  .camp1 {
+    background-position: 60% 50%;
+  }
+
+  .reservas {
+    background-position: 10% 100%;
+  }
+
+  .climb1 {
+    background-position: 60% 50%;
+  }
+
+  .reserves-text {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .number-text {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .subtitle-text {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .heading-4 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .div-block-4 {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero {
+    background-position: 44% 100%;
+  }
+
+  .footer {
+    background-position: 0% 50%;
+  }
+
+  .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .footer-header {
+    padding-bottom: 0px;
+  }
+
+  .flex-hor {
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .activity-button {
+    width: 28vw;
+    min-width: 120px;
+  }
+
+  .div-block {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .rapel-main {
+    background-position: 34% 50%;
+  }
+
+  .activity-header {
+    font-size: 47px;
+    line-height: 47px;
+  }
+
+  .rapel3 {
+    background-position: 80% 100%;
+  }
+
+  .rapel4 {
+    background-position: 33% 50%;
+  }
+
+  .via-main {
+    background-position: 64% 50%;
+  }
+
+  .via1 {
+    background-position: 60% 50%;
+  }
+
+  .via2 {
+    background-position: 64% 50%;
+  }
+
+  .via3 {
+    background-position: 35% 50%;
+  }
+
+  .via4 {
+    background-position: 33% 50%;
+  }
+
+  .camp-main {
+    background-position: 34% 50%;
+  }
+
+  .camp1 {
+    background-position: 70% 50%;
+  }
+
+  .reservas {
+    background-position: 40% 100%;
+  }
+
+  .climb1 {
+    background-position: 70% 50%;
+  }
+
+  .div-block-2 {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .reserves-text {
+    margin-right: 10px;
+  }
+
+  .reservas-banner {
+    padding-left: 20px;
+  }
+
+  .number-text {
+    margin-right: 10px;
+  }
+
+  .image-2 {
+    width: 95vw;
+  }
+
+  .subtitle-text {
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+
+  .registro-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .heading-3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 29px;
+  }
+
+  .div-block-3 {
+    padding-bottom: 0px;
+  }
+
+  .heading-4 {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .list-2 {
+    padding-left: 20px;
+  }
+
+  .nav-menu {
+    background-color: #ccc6cc;
+  }
+}
